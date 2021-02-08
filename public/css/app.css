@@ -16318,7 +16318,6 @@ body .banner {
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
-  height: 600px;
 }
 
 body .banner p {
@@ -16331,6 +16330,20 @@ body .banner p {
 
 #home .column .legend {
   position: absolute;
-  top: 0;
-  z-index: 99;
+  top: 50%;
+  left: 30%;
+  color: white;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+#home .column hr {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 50%;
+  border: none;
+  background-color: white;
 }
