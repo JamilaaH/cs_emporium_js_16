@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emporium</title>
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
+
 <body>
-    
+    <!-- navbar + banniere  -->
+    <header>
+        <a class="navbar-brand" href="#">
+            <img src="./public/img/logo.png" alt="logo" class="text-center">
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav  my-2">
+                    <li class="nav-item mx-md-2 active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">blog</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">elements</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="btn-blanc"></span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="btn-noir"></span>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-dark">connexion</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-gris">
+        <div class="banner row ">
+            <div class="col-md-7 align-self-center">
+                <h1 class="text-red">Shop at </h1>
+                <img src="./public/img/logo.png" alt="logo">
+                <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore minima qui rerum ipsa reiciendis magnam.</p>
+                <button class="btn btn-red px-5 py-3 rounded-pill text-uppercase">Sale items</button>
+            </div>
+            <div class="col-md-5">
+                <img src="./public/img/slider-1.jpg" alt="" class="img-fluid w-80">
+            </div>
+        </div>
+    </section>
+
+
+
 
 
 
@@ -22,4 +81,5 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>
