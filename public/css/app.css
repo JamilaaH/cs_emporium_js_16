@@ -16301,7 +16301,36 @@ body header {
   align-items: center;
 }
 
+body header .btn-blanc {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: solid 0.5px black;
+}
+
+body header .btn-noir {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
 body .banner {
   font-size: 20px;
-  margin: 0 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 600px;
+}
+
+body .banner p {
+  font-size: 16px;
+}
+
+#home .column .image {
+  position: relative;
+}
+
+#home .column .legend {
+  position: absolute;
+  top: 0;
+  z-index: 99;
 }
