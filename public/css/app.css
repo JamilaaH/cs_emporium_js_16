@@ -16516,19 +16516,22 @@ body .banner p {
   transition: 5s;
 }
 
-.section2 .galerie .addCart {
+.section2 .galerie .lux .addCart, .section2 .galerie .glove .addCart, .section2 .galerie .cup .addCart, .section2 .galerie .bag .addCart, .section2 .galerie .shirt .addCart, .section2 .galerie .plate .addCart, .section2 .galerie .sofa .addCart, .section2 .galerie .bed .addCart, .section2 .galerie .shoes .addCart {
   position: absolute;
-  bottom: -20%;
+  bottom: -50%;
   z-index: 99;
   color: white;
+  transition: 1s;
+  opacity: 0.9;
 }
 
-.section2 .galerie .addCart span {
-  padding: 7px;
+.section2 .galerie .lux .addCart span, .section2 .galerie .glove .addCart span, .section2 .galerie .cup .addCart span, .section2 .galerie .bag .addCart span, .section2 .galerie .shirt .addCart span, .section2 .galerie .plate .addCart span, .section2 .galerie .sofa .addCart span, .section2 .galerie .bed .addCart span, .section2 .galerie .shoes .addCart span {
+  font-size: 8.5px;
+  padding: 30px;
 }
 
-.section2 .galerie:hover .addCart {
-  bottom: 0;
+.section2 .galerie .lux:hover .addCart, .section2 .galerie .glove:hover .addCart, .section2 .galerie .cup:hover .addCart, .section2 .galerie .bag:hover .addCart, .section2 .galerie .shirt:hover .addCart, .section2 .galerie .plate:hover .addCart, .section2 .galerie .sofa:hover .addCart, .section2 .galerie .bed:hover .addCart, .section2 .galerie .shoes:hover .addCart {
+  transform: translateY(-100%);
 }
 
 .section2 .galerie img {
@@ -16557,7 +16560,7 @@ body .banner p {
   height: 50px;
   width: 50px;
   position: absolute;
-  right: 80%;
+  right: 70%;
   bottom: 1%;
 }
 
