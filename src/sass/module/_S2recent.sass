@@ -1,0 +1,47 @@
+.section2
+    .galerie
+        .image
+            position: relative
+            margin: auto
+            overflow: hidden
+            width: 220px
+            height: 170px
+            transition: 5s
+        .addCart
+            position: absolute
+            bottom: -20%
+            z-index: 99
+            color: white
+            span
+                padding: 7px
+        &:hover
+            .addCart
+                bottom: 0
+                // transform: translateX(20%)            
+        img 
+            transition: all 1s
+            &:hover
+                width: 200%
+                transform: scale(1.2)
+
+            &::after
+                content: "view cart"
+                position: absolute
+                top: 0
+                z-index: 99
+
+        .colonne
+            position: relative
+            .sale
+                padding-top: 15px
+                text-transform: uppercase
+                height: 50px
+                width: 50px
+                position: absolute
+                right: 80%
+                bottom : 1%
+
+
+@media (min-width: 1023px)
+    margin-left: 10%
+    margin-right: 10%

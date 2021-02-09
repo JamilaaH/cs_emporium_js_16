@@ -16347,3 +16347,62 @@ body .banner p {
   border: none;
   background-color: white;
 }
+
+.section2 .galerie .image {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 220px;
+  height: 170px;
+  transition: 5s;
+}
+
+.section2 .galerie .addCart {
+  position: absolute;
+  bottom: -20%;
+  z-index: 99;
+  color: white;
+}
+
+.section2 .galerie .addCart span {
+  padding: 7px;
+}
+
+.section2 .galerie:hover .addCart {
+  bottom: 0;
+}
+
+.section2 .galerie img {
+  transition: all 1s;
+}
+
+.section2 .galerie img:hover {
+  width: 200%;
+  transform: scale(1.2);
+}
+
+.section2 .galerie img::after {
+  content: "view cart";
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+
+.section2 .galerie .colonne {
+  position: relative;
+}
+
+.section2 .galerie .colonne .sale {
+  padding-top: 15px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 80%;
+  bottom: 1%;
+}
+
+@media (min-width: 1023px) {
+  margin-left: 10%;
+  margin-right: 10%;
+}
