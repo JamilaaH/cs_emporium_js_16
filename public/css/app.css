@@ -16564,11 +16564,12 @@ body .banner p {
 .section3 {
   background-image: url("../img/cta-bg.jpg");
   background-position: center;
-  height: 800px;
+  height: 500px;
+  background-attachment: fixed;
 }
 
 .section3 .contenu {
-  padding-top: 30%;
+  padding-top: 10%;
 }
 
 .section3 .contenu .titre {
@@ -16577,8 +16578,15 @@ body .banner p {
 
 .section5 .card {
   height: 400px;
+  padding: 0;
 }
 
 .section5 .card .icone {
   font-size: 28px;
+}
+
+footer .copy {
+  background-color: black;
+  padding: 15px;
+  text-align: center;
 }
