@@ -16402,7 +16402,16 @@ body .banner p {
   bottom: 1%;
 }
 
-@media (min-width: 1023px) {
-  margin-left: 10%;
-  margin-right: 10%;
+.section3 {
+  background-image: url("../img/cta-bg.jpg");
+  background-position: center;
+  height: 800px;
+}
+
+.section3 .contenu {
+  padding-top: 30%;
+}
+
+.section3 .contenu .titre {
+  font-size: 40px;
 }
