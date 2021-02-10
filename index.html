@@ -11,7 +11,7 @@
 <body>
     <!-- navbar + banniere  -->
     <header>
-        <nav class="navbar d-flex flex-column bg-light navbar-expand-lg navbar-light">
+        <nav class="navbar d-flex flex-column bg-blanc navbar-expand-lg navbar-light">
             <div class="img-nav">
                 <a class="navbar-brand logo font-weight-bold" href="#" >
                     emporium.
@@ -42,7 +42,7 @@
                     </li>
                         <span class="btn-blanc mx-md-1 align-self-center"></span>
                         <span class="btn-noir mx-md-1 align-self-center"></span>
-                        <button class="btn btn-dark">connexion</button>
+                        <button class="btn btn-dark seConnecter">connexion</button>
                 </ul>
             </div>
         </nav>
@@ -59,7 +59,78 @@
                 <img src="./public/img/slider-1.jpg" alt="" class="img-fluid align-self-center">
             </div>
         </div>
+        <!-- modal connexion -->
+        <div id="connexion" class="co">
+            <!-- premiere carte -->
+            <button class="fermer bg-red text-white float-right " style="opacity:0.6;border:none"> x</button>
+            <h1 class="font-weight-bold">emporium.</h1>
+            <div class=" d-flex justify-content-center align-items-center">
+                <button type="button" class="btn connexion btn-red mx-1 text-white">Connexion</button>
+                <button type="button" class="btn btn-red inscription text-white">Inscription</button>
+            </div>
+            <div class="modale1 p-2 " id="modale1">
+                <div class="champ my-2 d-flex flex-column">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10" >
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="****" class="col-10">
+                        </div>
+                        <div class="submit my-2">
+                            <input type="checkbox" value="Check"> Check me out
+                        </div>
+                        <button type="button" class="btnshop btn-primary text-white mx-3">Submit</button>
+                    </div>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline"> 
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 2e carte -->
+            <div class="modale1 p-2 d-none" id="modale2">
+                <div class="champ my-2 d-flex flex-column align-items-center">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10" >
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp my-2">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="****" class="col-10">
+                        </div>
+                        <div class="confirm my-2">
+                            <h5>Confirmer votre mot de passe</h5>
+                            <input type="password" placeholder="****" class="col-10">
+                        </div>
+                        <div class="form-check my-2 ">
+                            <input type="checkbox" value="femme">
+                            <label for="form-check-label">Femme</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="homme">
+                            <label for="form-check-label">Homme</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary  text-white mx-3">Inscription</button>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline"> 
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
     </section>
+    
+
 
     <!-- premiere section  -->
     <section class="home row my-3" id ="home">
@@ -303,7 +374,6 @@
         </div>
     </section>
     <!-- fin section 5 -->
-
     <!-- FOOTER -->
     <footer class="bg-bleu">
         <div class="container-fluid  text-white py-4">
@@ -380,8 +450,6 @@
             <span class="text-muted text-center">Copyright</span>
         </div>
     </footer>
-
-
 
     <script src="./public/js/main.js"></script>
     <!-- script jquery -->
