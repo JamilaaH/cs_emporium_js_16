@@ -154,21 +154,3 @@ btnUn.addEventListener('click', ()=> {
 
 
 console.log(allBtn);
-
-// let myEvent = (e) => {
-//     var btn = e.target
-//     if (btn.classList.contains('deux')) {
-//         test.style = "transform:translateX(-40%); transition:2s"
-//     } else if (btn.classList.contains('trois')) {
-//         test.style = "transform:translateX(-40%); transition:2s" 
-        
-//     } else if (btn.classList.contains('quatre')) {
-//         test.style = "transform:translateX(-40%); transition:2s"
-//     } else if (btn.classList.contains('un')) {
-//         test.style = "transform:translateX(-40%); transition:2s"
-//     }
-// }
-// allBtn.addEventListener('click', myEvent)
-
-// console.log(test.clientWidth);
-// console.log(test.offsetWidth);
