@@ -97,7 +97,12 @@ let btnClose = document.querySelector('.fermer')
 //bouton connexion du navbar
 
 btnSeCo.addEventListener('click', ()=> {
+    var divHide = document.createElement("div"); 
+    divHide.classList.add("hide"); 
+    document.body.insertBefore(divHide, header);
+    console.log(divHide);
     popUp.style = 'display: block'
+    document.body.style.overflow='hidden'
 })
 
 btnClose.addEventListener('click', ()=> {
