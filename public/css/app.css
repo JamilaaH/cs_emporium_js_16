@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'poppins';
-  src: url("../public/fonts/Poppins-Regular.ttf");
+  src: url("../fonts/Poppins-Regular.ttf");
 }
 
 /*!
@@ -16776,6 +16776,7 @@ body header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 999;
 }
 
 body header .navbar-brand {
@@ -16807,7 +16808,7 @@ body .banner p {
 
 #connexion {
   background-color: white;
-  border: 1px solid black;
+  border: 0.2px solid black;
   border-radius: 5px;
   width: 700px;
   height: 500px;
@@ -16854,7 +16855,7 @@ body .banner p {
 .section2 .galerie .lux .addCart, .section2 .galerie .glove .addCart, .section2 .galerie .cup .addCart, .section2 .galerie .bag .addCart, .section2 .galerie .shirt .addCart, .section2 .galerie .plate .addCart, .section2 .galerie .sofa .addCart, .section2 .galerie .bed .addCart, .section2 .galerie .shoes .addCart {
   position: absolute;
   bottom: -50%;
-  z-index: 99;
+  z-index: 9;
   color: white;
   transition: 1s;
   opacity: 0.9;
@@ -16905,6 +16906,12 @@ body .banner p {
 
 .section3 .contenu .titre {
   font-size: 30px;
+}
+
+.section4 .carrousel {
+  width: 60vw;
+  overflow: hidden;
+  margin: 0 10vw;
 }
 
 .section5 .card {
