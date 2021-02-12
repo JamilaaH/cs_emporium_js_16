@@ -8,7 +8,7 @@ let navBar = document.querySelector('.navbar')
 let nav = document.querySelector('.navbar-collapse')
 console.log(nav);
 let header = document.querySelector('header')
-// console.log(legend);
+// console.log(header);
 // console.log(btnNoir);
 // console.log(navBar);
 let allBtn = document.querySelectorAll(".boutonCarou");
@@ -92,22 +92,30 @@ let btnSeCo = document.querySelector('.seConnecter')
 let popUp = document.querySelector('#connexion')
 let btnClose = document.querySelector('.fermer')
 // console.log(btnSubs);
-
+let divHide = document.querySelector('.hide')
 
 //bouton connexion du navbar
 
 btnSeCo.addEventListener('click', ()=> {
-    var divHide = document.createElement("div"); 
-    divHide.classList.add("hide"); 
+    divHide.style= " width: 100%; height: 100%;  background-color: rgba(0,0,0,.5); z-index: 999; position: fixed; "
     document.body.insertBefore(divHide, header);
-    console.log(divHide);
     popUp.style = 'display: block'
     document.body.style.overflow='hidden'
 })
 
 btnClose.addEventListener('click', ()=> {
     popUp.style = 'display: none'
+    document.body.style.overflow=null
+    divHide.style.display = "none"
 })
+
+divHide.addEventListener('click', ()=> {
+    popUp.style = 'display: none'
+    document.body.style.overflow=null
+    divHide.style.display = "none"
+})
+
+
 
 
 
@@ -137,20 +145,20 @@ let test = document.querySelector('.test')
 
 
 btnDeux.addEventListener('click', ()=> {
-    test.style = "transform:translateX(-200px); transition:2s"    
+    test.style = "transform:translateX(-200px); transition:1s"    
 })
 
 btnTrois.addEventListener('click', ()=> {
-    test.style = "transform:translateX(-400px); transition:2s"    
+    test.style = "transform:translateX(-400px); transition:1s"    
 })
 btnQuatre.addEventListener('click', ()=> {
-    test.style = "transform:translateX(-600px); transition:2s"
+    test.style = "transform:translateX(-600px); transition:1s"
     
 })
 btnUn.addEventListener('click', ()=> {
-    test.style = "transform:translateX(0%); transition:2s"
+    test.style = "transform:translateX(0%); transition:1s"
     
 })
 
 
-console.log(allBtn);
+// console.log(allBtn);

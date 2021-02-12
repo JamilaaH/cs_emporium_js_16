@@ -16910,6 +16910,7 @@ body .banner p {
 
 .section4 .carrousel {
   width: 60vw;
+  height: 80vh;
   overflow: hidden;
   margin: 0 10vw;
 }
